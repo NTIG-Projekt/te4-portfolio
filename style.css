@@ -26,6 +26,7 @@ body {
     letter-spacing: 0.03em;
     font-family: 'Titillium Web', sans-serif;
     font-weight: 300;
+    background-color: #f0f0f0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -33,8 +34,12 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 800;
 }
 
-.subheader {
+.sub-header {
     font-family: 'Titillium Web', sans-serif;
     font-weight: 600;
+}
+
+.card {
+    width: 344px;
 }
 
