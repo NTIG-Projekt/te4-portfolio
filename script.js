@@ -16,17 +16,17 @@ function removeCards(select) { //Animerar bort alla med klassen card alternativt
     });
 }
 
-function hideCard(card) {
-    card.style.transform = "scale(0)";
-    card.addEventListener("transitionend", () => {
-        card.style.display = "none";
-    }, {once: true});
-}
-
-function showCard(card) {
+function showCard(card) { //Animerar fram ett kort
     card.style.display = "initial";
     setTimeout(() => {
         card.style.transform = "scale(1)";
     }, 100);
     
+}
+
+function hideCard(card) { //Animerar bort ett kort
+    card.style.transform = "scale(0)";
+    card.addEventListener("transitionend", () => { //Plocka bort kortet så att dess utrymme på sidan inte ligger kvar
+        card.style.display = "none";
+    }, {once: true});
 }
