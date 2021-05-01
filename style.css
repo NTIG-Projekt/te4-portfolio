@@ -16,8 +16,25 @@ Grafisk profil
 
         Turkos: #0de1ec
         Ultramarin: #200c9c
-        
+
         Granitgrå: #f0f0f0
         Kolgrå: #222222
 
 */
+
+body {
+    letter-spacing: 0.03em;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+}
+
+.subheader {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 600;
+}
+
