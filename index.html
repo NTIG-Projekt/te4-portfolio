@@ -18,7 +18,7 @@
 
     <title>Gymnasieingenjör</title>
   </head>
-  <body>
+  <body onload="initiateSite()">
  
     <header class="container-fluid">
     </header>
@@ -27,47 +27,141 @@
     </nav>
  
     <main class="container-fluid">
-        <h1>Skolor</h1>
+        
         <section id="schools" class="container-fluid d-flex flex-wrap justify-content-center">
-            
-            <article class="card">
+            <h1>Skolor</h1>
+            <article class="card shadow-sm school lund">
                 <section class="card-body">
-                <h5 class="card-title">Exempel</h5>
+                    <h5 class="card-title">Lund</h5>
+                    <p class="card-text">Löksås ipsum omfångsrik därmed kunde smultron tiden, göras se enligt gör ingalunda vidsträckt åker, kan mot gör denna så. Löksås ipsum omfångsrik därmed kunde smultron tiden, göras se enligt gör ingalunda vidsträckt åker, kan mot gör denna så.</p>
+                </section>
+            </article>
+
+            <article class="card shadow-sm school skovde">
+                <section class="card-body">
+                    <h5 class="card-title">Skövde</h5>
+                    <p class="card-text">Löksås ipsum omfångsrik därmed kunde smultron tiden, göras se enligt gör ingalunda vidsträckt åker, kan mot gör denna så.</p>
+                </section>
+                <section class="card-footer">
+                    <a onclick="" class="btn rounded-pill tag">Skövde</a>
+                </section>
+            </article>
+
+            <article class="card shadow-sm school umea">
+                <section class="card-body">
+                <h5 class="card-title">Umeå</h5>
                 <p class="card-text">Löksås ipsum omfångsrik därmed kunde smultron tiden, göras se enligt gör ingalunda vidsträckt åker, kan mot gör denna så. Löksås ipsum omfångsrik därmed kunde smultron tiden, göras se enligt gör ingalunda vidsträckt åker, kan mot gör denna så.</p>
                 </section>
             </article>
 
-            <article class="card">
+            <article class="card shadow-sm school uppsala">
                 <section class="card-body">
-                <h5 class="card-title">Exempel</h5>
-                <p class="card-text">Löksås ipsum omfångsrik därmed kunde smultron tiden, göras se enligt gör ingalunda vidsträckt åker, kan mot gör denna så.</p>
-                </section>
-            </article>
-
-            <article class="card">
-                <section class="card-body">
-                <h5 class="card-title">Exempel</h5>
-                <p class="card-text">Löksås ipsum omfångsrik därmed kunde smultron tiden, göras se enligt gör ingalunda vidsträckt åker, kan mot gör denna så. Löksås ipsum omfångsrik därmed kunde smultron tiden, göras se enligt gör ingalunda vidsträckt åker, kan mot gör denna så.</p>
-                </section>
-            </article>
-
-            <article class="card">
-                <section class="card-body">
-                <h5 class="card-title">Exempel</h5>
+                <h5 class="card-title">Uppsala</h5>
                 <p class="card-text">Löksås ipsum omfångsrik därmed kunde smultron tiden, göras se enligt gör ingalunda vidsträckt åker, kan mot gör denna så.</p>
                 </section>
             </article>
 
         </section>
 
-        <h1>Elever</h1>
-        <section id="students"></section>
+        
+        <section id="students" class="container-fluid d-flex flex-wrap justify-content-center">
+            <h1>Elever</h1>
 
-        <h1>Projekt</h1>
-        <section id="projects"></section>
+            <article class="card shadow-sm student lund">
+                <section class="card-body">
+                <h5 class="card-title">Exempel 1</h5>
+                <p class="card-text">Löksås ipsum omfångsrik därmed kunde smultron tiden, göras se enligt gör ingalunda vidsträckt åker, kan mot gör denna så. Löksås ipsum omfångsrik därmed kunde smultron tiden, göras se enligt gör ingalunda vidsträckt åker, kan mot gör denna så.</p>
+                </section>
+            </article>
 
-        <h1>Lärare</h1>
-        <section id="teachers"></section>
+            <article class="card shadow-sm student skovde">
+                <section class="card-body">
+                <h5 class="card-title">Exempel 2</h5>
+                <p class="card-text">Löksås ipsum omfångsrik därmed kunde smultron tiden, göras se enligt gör ingalunda vidsträckt åker, kan mot gör denna så.</p>
+                </section>
+            </article>
+
+            <article class="card shadow-sm student umea">
+                <section class="card-body">
+                <h5 class="card-title">Exempel 3</h5>
+                <p class="card-text">Löksås ipsum omfångsrik därmed kunde smultron tiden, göras se enligt gör ingalunda vidsträckt åker, kan mot gör denna så. Löksås ipsum omfångsrik därmed kunde smultron tiden, göras se enligt gör ingalunda vidsträckt åker, kan mot gör denna så.</p>
+                </section>
+            </article>
+
+            <article class="card shadow-sm student uppsala">
+                <section class="card-body">
+                <h5 class="card-title">Exempel 3</h5>
+                <p class="card-text">Löksås ipsum omfångsrik därmed kunde smultron tiden, göras se enligt gör ingalunda vidsträckt åker, kan mot gör denna så.</p>
+                </section>
+            </article>
+
+        </section>
+
+        
+        <section id="projects" class="container-fluid d-flex flex-wrap justify-content-center">
+            <h1>Projekt</h1>
+            <article class="card shadow-sm project lund">
+                <section class="card-body">
+                <h5 class="card-title">Exempel 1</h5>
+                <p class="card-text">Löksås ipsum omfångsrik därmed kunde smultron tiden, göras se enligt gör ingalunda vidsträckt åker, kan mot gör denna så. Löksås ipsum omfångsrik därmed kunde smultron tiden, göras se enligt gör ingalunda vidsträckt åker, kan mot gör denna så.</p>
+                </section>
+            </article>
+
+            <article class="card shadow-sm project skovde umea">
+                <section class="card-body">
+                <h5 class="card-title">Exempel 2</h5>
+                <p class="card-text">Löksås ipsum omfångsrik därmed kunde smultron tiden, göras se enligt gör ingalunda vidsträckt åker, kan mot gör denna så.</p>
+                </section>
+            </article>
+
+            <article class="card shadow-sm project umea">
+                <section class="card-body">
+                <h5 class="card-title">Exempel 3</h5>
+                <p class="card-text">Löksås ipsum omfångsrik därmed kunde smultron tiden, göras se enligt gör ingalunda vidsträckt åker, kan mot gör denna så. Löksås ipsum omfångsrik därmed kunde smultron tiden, göras se enligt gör ingalunda vidsträckt åker, kan mot gör denna så.</p>
+                </section>
+            </article>
+
+            <article class="card shadow-sm project uppsala">
+                <section class="card-body">
+                <h5 class="card-title">Exempel 3</h5>
+                <p class="card-text">Löksås ipsum omfångsrik därmed kunde smultron tiden, göras se enligt gör ingalunda vidsträckt åker, kan mot gör denna så.</p>
+                </section>
+            </article>
+
+        </section>
+
+        
+        <section id="teachers" class="container-fluid d-flex flex-wrap justify-content-center">
+            <h1>Lärare</h1>
+            <article class="card shadow-sm teacher lund">
+                <section class="card-body">
+                <h5 class="card-title">Exempel 1</h5>
+                <p class="card-text">Löksås ipsum omfångsrik därmed kunde smultron tiden, göras se enligt gör ingalunda vidsträckt åker, kan mot gör denna så. Löksås ipsum omfångsrik därmed kunde smultron tiden, göras se enligt gör ingalunda vidsträckt åker, kan mot gör denna så.</p>
+                </section>
+            </article>
+
+            <article class="card shadow-sm teacher skovde">
+                <section class="card-body">
+                <h5 class="card-title">Exempel 2</h5>
+                <p class="card-text">Löksås ipsum omfångsrik därmed kunde smultron tiden, göras se enligt gör ingalunda vidsträckt åker, kan mot gör denna så.</p>
+                </section>
+            </article>
+
+            <article class="card shadow-sm teacher umea">
+                <section class="card-body">
+                <h5 class="card-title">Exempel 3</h5>
+                <p class="card-text">Löksås ipsum omfångsrik därmed kunde smultron tiden, göras se enligt gör ingalunda vidsträckt åker, kan mot gör denna så. Löksås ipsum omfångsrik därmed kunde smultron tiden, göras se enligt gör ingalunda vidsträckt åker, kan mot gör denna så.</p>
+                </section>
+            </article>
+
+            <article class="card shadow-sm teacher uppsala">
+                <section class="card-body">
+                <h5 class="card-title">Exempel 3</h5>
+                <p class="card-text">Löksås ipsum omfångsrik därmed kunde smultron tiden, göras se enligt gör ingalunda vidsträckt åker, kan mot gör denna så.</p>
+                </section>
+            </article>
+
+        </section>
 
     </main>
  

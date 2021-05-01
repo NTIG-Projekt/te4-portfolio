@@ -3,12 +3,12 @@
 Grafisk profil
 
     Typsnitt:
-        Rubriker: Opens Sand Extra Bold
-        Underrubriker: Tillium Web Semi Bold
-        Brödtext (Ljus på mörk): Tillium Web Ligth
-        Brödtext (Mörk på ljus): Tillium Web Regular
+        Rubriker: Opens Sand Extra Bold (800)
+        Underrubriker: Tillium Web Semi Bold (600)
+        Brödtext (Ljus på mörk): Tillium Web Ligth (300)
+        Brödtext (Mörk på ljus): Tillium Web Regular (400)
 
-        All text: Spärrning +30
+        All text: Spärrning +30 (letter-spacing: 0.03em)
     
     Färger:
         Magenta: #dd0890
@@ -21,6 +21,18 @@ Grafisk profil
         Kolgrå: #222222
 
 */
+
+
+@keyframes reveal-card {
+    from {scale: 0;}
+    to {scale: 1;}
+}
+
+@keyframes hide-card {
+    from {scale: 1;}
+    to {scale: 0;}
+}
+
 
 body {
     letter-spacing: 0.03em;
@@ -39,7 +51,16 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
 }
 
+
+section > h1 {
+    width: 100%;
+}
+
 .card {
     width: 344px;
+    margin: 5px;
+    transition: transform .8s;
+    transform: scale(0);
+    display: none;
 }
 

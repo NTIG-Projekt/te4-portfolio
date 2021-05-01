@@ -1,3 +1,16 @@
+
+var urlParams;
+
+
+function initiateSite() {
+    let queryString = window.location.search;
+    urlParams = new URLSearchParams(queryString);
+
+
+    revealCards();
+}
+
+
 function revealCards(select) { //Animerar fram alla med klassen card alternativt alla med klassen card och klassen parameter
     if (!select) { select = ".card" }
     else { select = ".card."+ select }
@@ -14,6 +27,11 @@ function removeCards(select) { //Animerar bort alla med klassen card alternativt
     cards.forEach((card, index) => {
         setTimeout(function(){ hideCard(card) }, index * 200);
     });
+}
+
+function exchangeCards(select) {
+    removeCards(select);
+    revealCards(select);
 }
 
 function showCard(card) { //Animerar fram ett kort
