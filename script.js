@@ -6,14 +6,19 @@ function initiateSite() {
     let queryString = window.location.search;
     urlParams = new URLSearchParams(queryString);
 
-
-    revealCards();
+    if (!urlParams.get("search")) {
+        revealCards();
+    }
+    else {
+        revealCards(urlParams.get("search"));
+    }
+    
 }
 
 
 function revealCards(select) { //Animerar fram alla med klassen card alternativt alla med klassen card och klassen parameter
     if (!select) { select = ".card" }
-    else { select = ".card."+ select }
+    else { select = ".card.always, .card."+ select }
     let cards = document.querySelectorAll(select);
     cards.forEach((card, index) => {
         setTimeout(function(){ showCard(card) }, index * 200);
