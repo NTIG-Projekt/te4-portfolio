@@ -44,6 +44,9 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
 }
 
+.clickable {
+    cursor: pointer;
+}
 
 /* HEADER OCH NAVBAR */
 header {
@@ -152,7 +155,8 @@ nav > button:nth-child(10) {
 
 .card-magenta > .card-body, .card-ultraviolet > .card-body {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 
