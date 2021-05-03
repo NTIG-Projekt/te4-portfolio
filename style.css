@@ -49,13 +49,75 @@ h1, h2, h3, h4, h5, h6 {
 header {
     height: 20vh;
     color: #ffffff;
-    background-image: url("img/ntig_unsplash_nasa.jpg");
+    background-image: url("img/ntig_lila_bollar.png");
     background-size: cover;
     background-position: center center;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+nav > button {
+    margin: 10px;
+    min-width: 100px;
+    background-color: #dd0890;
+    /* background-image: linear-gradient(to right, #dd0890 , #4b0082); */
+    background-image: url("img/ntig_lila_bollar.png");
+    background-size: 1000%;
+    border: none !important;
+    color: #ffffff !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.03em !important;
+}
+
+nav > button:nth-child(1) {
+    background-position: 30% 60%;
+}
+
+nav > button:nth-child(2) {
+    background-position: 35% 60%;
+}
+
+nav > button:nth-child(3) {
+    background-position: 40% 60%;
+}
+
+nav > button:nth-child(4) {
+    background-position: 45% 60%;
+}
+
+nav > button:nth-child(5) {
+    background-position: 50% 60%;
+}
+
+nav > button:nth-child(6) {
+    background-position: 55% 60%;
+}
+
+nav > button:nth-child(7) {
+    background-position: 60% 60%;
+}
+
+nav > button:nth-child(8) {
+    background-position: 65% 60%;
+}
+
+nav > button:nth-child(9) {
+    background-position: 70% 60%;
+}
+
+nav > button:nth-child(10) {
+    background-position: 75% 60%;
+}
+
 
 
 /*  KORT */
