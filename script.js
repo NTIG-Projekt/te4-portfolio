@@ -35,12 +35,13 @@ function removeCards(select) { //Animerar bort alla med klassen card alternativt
 }
 
 function contextCards(select) { 
-    removeCards(select);
     revealCards(select);
+    removeCards(select);
 }
 
 function showCard(card) { //Animerar fram ett kort
     card.style.display = "flex";
+    //console.log("Visar "+ card.getElementsByTagName("section")[0].getElementsByTagName("h5")[0].innerText); //Bra för debug
     setTimeout(() => {
         card.style.transform = "scale(1)";
     }, 100);
@@ -49,7 +50,8 @@ function showCard(card) { //Animerar fram ett kort
 
 function hideCard(card) { //Animerar bort ett kort
     card.style.transform = "scale(0)";
-    card.addEventListener("transitionend", () => { //Plocka bort kortet så att dess utrymme på sidan inte ligger kvar
+    //console.log("Gömmer "+ card.getElementsByTagName("section")[0].getElementsByTagName("h5")[0].innerText); //Bra för debug
+    setTimeout(() => { //Plockar bort kortet så att dess utrymme på sidan inte ligger kvar
         card.style.display = "none";
-    }, {once: true});
+    }, 500);
 }
