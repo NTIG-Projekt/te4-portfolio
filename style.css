@@ -131,6 +131,7 @@ nav > button:nth-child(10) {
     justify-content: left;
     padding-left: 10vw;
     padding-right: 10vw;
+    margin-bottom: 5vh;
 }
 
 .card {
@@ -167,18 +168,37 @@ nav > button:nth-child(10) {
     align-content: space-between;
 }
 
+.student > .card-footer {
+    background-color: #dd0890;
+    color:  #dd0890;
+}
+
+.student > .card-footer > a {
+    background-color: #ffffff;
+    color:  #dd0890;
+}
+
+.project > .card-footer {
+    background-color: #4b0082;
+    color: #4b0082;
+}
+
+.project > .card-footer > a {
+    background-color: #ffffff;
+    color: #4b0082;
+}
+
 .card-footer > span, .card-footer > a {
     margin:2px;
 }
 
-.tag, .tag:hover {
-    color:#ffffff;
-    font-weight: 400;
-    background-color: #4b0082;
-    font-size: 0.8em;
-    text-decoration: none;
-    cursor: pointer;
-}
 
 
 /* FOOTER */
+
+footer {
+    height: 20vh;
+    background-color: #222222;
+    color: #ffffff;
+    font-weight: 400;
+}
