@@ -137,6 +137,7 @@ nav > button:nth-child(10) {
     transform: scale(0);
     display: none;
     flex-direction: column;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0, .075);
 }
 
 .card-magenta {
@@ -153,6 +154,8 @@ nav > button:nth-child(10) {
     display: flex;
     align-items: center;
 }
+
+
 
 .card-footer {
     display: flex;
