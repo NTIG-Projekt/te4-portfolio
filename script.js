@@ -21,21 +21,21 @@ function revealCards(select) { //Animerar fram alla med klassen card alternativt
 }
 
 function removeCards(select) { //Animerar bort alla med klassen card alternativt alla med klassen card utom de med klassen parameter
-    if (!select) { select = ".card" }
-    else { select = ".card:not(."+ select +")"}
+    if (!select) { select = ".card:not(.always)" }
+    else { select = ".card:not(."+ select +"):not(.always)"}
     let cards = document.querySelectorAll(select);
     cards.forEach((card, index) => {
         setTimeout(function(){ hideCard(card) }, index * 200);
     });
 }
 
-function exchangeCards(select) {
+function contextCards(select) { 
     removeCards(select);
     revealCards(select);
 }
 
 function showCard(card) { //Animerar fram ett kort
-    card.style.display = "initial";
+    card.style.display = "flex";
     setTimeout(() => {
         card.style.transform = "scale(1)";
     }, 100);

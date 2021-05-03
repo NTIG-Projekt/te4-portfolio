@@ -56,11 +56,53 @@ section > h1 {
     width: 100%;
 }
 
+.card-deck {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding-left: 10vw;
+    paddin-right: 10vw;
+}
+
 .card {
     width: 344px;
     margin: 5px;
-    transition: transform .8s;
+    transition: transform .9s;
     transform: scale(0);
     display: none;
+    flex-direction: column;
 }
 
+.card-magenta {
+    background-color: #dd0890;
+    color:#ffffff;
+}
+
+.card-ultraviolet {
+    background-color: #4b0082;
+    color:#ffffff;
+}
+
+.card-magenta > .card-body, .card-ultraviolet > .card-body {
+    display: flex;
+    align-items: center;
+}
+
+.card-footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.card-footer > span, .card-footer > a {
+    margin:2px;
+}
+
+.tag, .tag:hover {
+    color:#ffffff;
+    font-weight: 400;
+    background-color: #4b0082;
+    font-size: 0.8em;
+    text-decoration: none;
+    cursor: pointer;
+}
