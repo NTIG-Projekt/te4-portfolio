@@ -33,18 +33,29 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
+    letter-spacing: 0.03em;
     font-family: 'Open Sans', sans-serif;
     font-weight: 800;
 }
 
 .sub-header {
+    letter-spacing: 0.03em;
     font-family: 'Titillium Web', sans-serif;
     font-weight: 600;
 }
 
 
 /* HEADER OCH NAVBAR */
-
+header {
+    height: 20vh;
+    color: #ffffff;
+    background-image: url("img/ntig_unsplash_nasa.jpg");
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /*  KORT */
 
