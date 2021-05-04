@@ -182,6 +182,10 @@ nav > button:nth-child(10) {
   }
 
 
+  .card > .list-group, .card > .list-group > .list-group-item {
+      border:none !important;
+      font-size: 0.9rem;
+  }
 
 
 .card-footer.student {
