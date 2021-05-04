@@ -188,14 +188,14 @@ nav > button:nth-child(10) {
   }
 
 
-.card-footer.student {
+.card-footer {
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
 }
 
 
-.card-section {
+.card-section.student {
     background-color: #dd0890;
     color:#ffffff;
 }
