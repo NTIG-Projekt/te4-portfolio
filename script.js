@@ -18,7 +18,7 @@ function initiateSite() {
 
 function revealCards(select) { //Animerar fram alla med klassen card alternativt alla med klassen card och klassen parameter
     if (!select) { select = ".card" }
-    else { select = ".card.always, .card."+ select }
+    else { select = ".card.always, .card."+ select +"[style*='display: none']" }
     let cards = document.querySelectorAll(select);
     cards.forEach((card, index) => {
         setTimeout(function(){ showCard(card) }, index * 200);
@@ -27,7 +27,7 @@ function revealCards(select) { //Animerar fram alla med klassen card alternativt
 
 function removeCards(select) { //Animerar bort alla med klassen card alternativt alla med klassen card utom de med klassen parameter
     if (!select) { select = ".card:not(.always)" }
-    else { select = ".card:not(."+ select +"):not(.always)"}
+    else { select = ".card:not(."+ select +")[style*='display: flex']:not(.always)"}
     let cards = document.querySelectorAll(select);
     cards.forEach((card, index) => {
         setTimeout(function(){ hideCard(card) }, index * 200);
