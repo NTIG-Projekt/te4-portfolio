@@ -27,7 +27,7 @@ function revealCards(select) { //Animerar fram alla med klassen card alternativt
 
 function removeCards(select) { //Animerar bort alla med klassen card alternativt alla med klassen card utom de med klassen parameter
     if (!select) { select = ".card:not(.always)" }
-    else { select = ".card:not(."+ select +")[style*='display: flex']:not(.always)"}
+    else { select = ".card:not(."+ select +")[style*='display: flex']:not(.sticky)"}
     let cards = document.querySelectorAll(select);
     cards.forEach((card, index) => {
         setTimeout(function(){ hideCard(card) }, index * 200);
