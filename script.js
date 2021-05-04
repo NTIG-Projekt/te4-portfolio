@@ -1,12 +1,12 @@
 
-var urlParams;
+var urlParams; // För att eventuellt kunna använda URL parametrar på andra platser i koden
 
 
 function initiateSite() {
     let queryString = window.location.search;
-    urlParams = new URLSearchParams(queryString);
+    urlParams = new URLSearchParams(queryString); //Hämtar alla efter sidans adress
 
-    if (!urlParams.get("search")) {
+    if (!urlParams.get("search")) { //Om det finns ett ?search= efter URL så använd den för att sortera ut kort
         revealCards();
     }
     else {
@@ -34,7 +34,7 @@ function removeCards(select) { //Animerar bort alla med klassen card alternativt
     });
 }
 
-function contextCards(select) { 
+function contextCards(select) { //Byt nuvarande kort mot andra, spara de som redan stämmer
     revealCards(select);
     removeCards(select);
 }
