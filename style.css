@@ -74,7 +74,7 @@ nav > button {
     background-color: #dd0890;
     /* background-image: linear-gradient(to right, #dd0890 , #4b0082); */
     background-image: url("img/ntig_lila_bollar.png");
-    background-size: 1000%;
+    background-size: 100vw;
     border: none !important;
     color: #ffffff !important;
     font-weight: 500 !important;
@@ -86,7 +86,7 @@ nav > button:nth-child(1) {
 }
 
 nav > button:nth-child(2) {
-    background-position: 35% 60%;
+    background-position: 35% 65%;
 }
 
 nav > button:nth-child(3) {
@@ -94,7 +94,7 @@ nav > button:nth-child(3) {
 }
 
 nav > button:nth-child(4) {
-    background-position: 45% 60%;
+    background-position: 45% 65%;
 }
 
 nav > button:nth-child(5) {
@@ -102,7 +102,7 @@ nav > button:nth-child(5) {
 }
 
 nav > button:nth-child(6) {
-    background-position: 55% 60%;
+    background-position: 55% 65%;
 }
 
 nav > button:nth-child(7) {
@@ -110,7 +110,7 @@ nav > button:nth-child(7) {
 }
 
 nav > button:nth-child(8) {
-    background-position: 65% 60%;
+    background-position: 65% 65%;
 }
 
 nav > button:nth-child(9) {
@@ -118,7 +118,7 @@ nav > button:nth-child(9) {
 }
 
 nav > button:nth-child(10) {
-    background-position: 75% 60%;
+    background-position: 75% 65%;
 }
 
 
