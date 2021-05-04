@@ -129,13 +129,14 @@ nav > button:nth-child(10) {
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
-    padding-left: 10vw;
-    padding-right: 10vw;
+    margin-left: auto; 
+    margin-bottom: auto;
     margin-bottom: 5vh;
 }
 
+
 .card {
-    width: 344px;
+    width: 100%;
     margin: 5px;
     transition: transform .9s;
     transform: scale(0);
@@ -143,6 +144,42 @@ nav > button:nth-child(10) {
     flex-direction: column;
     box-shadow: 0 .125rem .25rem rgba(0,0,0, .075);
 }
+
+@media screen and (min-width: 768px) {
+    .card {
+      width:338px;
+    }
+    .card-deck {
+        width: 720px;
+    }
+  }
+
+@media screen and (min-width: 992px) {
+    .card {
+      width:302px;
+    }
+    .card-deck {
+        width: 960px;
+    }
+  }
+
+@media screen and (min-width: 1200px) {
+    .card {
+      width:269px;
+    }
+    .card-deck {
+        width: 1140px;
+    }
+  }
+
+  @media screen and (min-width: 1400px) {
+    .card {
+      width:245px;
+    }
+    .card-deck {
+        width: 1320px;
+    }
+  }
 
 .card-magenta {
     background-color: #dd0890;
