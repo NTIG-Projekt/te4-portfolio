@@ -234,7 +234,33 @@ nav > button:nth-child(10) {
 
 footer {
     height: 20vh;
+    padding-top: 4vh;
     background-color: #222222;
     color: #ffffff;
     font-weight: 400;
+    display: flex;
+    justify-content: center;
+}
+
+footer > section.left {
+    width: 30vw;
+    height: 12vh;
+    padding-right: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-right: #ffffff solid 2px;
+}
+
+footer > section.right {
+    width: 30vw;
+    height: 12vh;
+    padding-left: 30px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+footer > section > img {
+    height: 5vh;
 }
